@@ -3,52 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>vxart.shop | Design & Web</title>
+    <title>vxart.shop | Design & Tech</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
-        <div class="logo">vxart<span>.shop</span></div>
+        <div class="logo">Vx<span>art</span></div>
         <nav>
-            <a href="#portfolio">Trabalhos</a>
-            <a href="https://wa.me/SEU_NUMERO" class="btn-contato">Contato</a>
+            <a href="#loja">Loja</a>
+            <a href="#portfolio">Portfólio</a>
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count">0</span>
+            </div>
         </nav>
     </header>
 
     <section class="hero">
-        <h1>Design que <span>vende</span>.</h1>
-        <p>Especialista em identidades visuais no Canva e Web Design moderno.</p>
+        <h1>Sua marca com <span>identidade</span>.</h1>
+        <p>Design de elite e desenvolvimento web sob medida.</p>
     </section>
 
-    <div id="portfolio" class="grid-produtos">
+    <h2 class="section-title">Nossos Serviços</h2>
+    <div id="loja" class="grid-produtos">
         <div class="card">
-            <div class="thumb" style="background: linear-gradient(45deg, #222, #444);">
-                <i class="fas fa-paint-brush"></i>
+            <div class="thumb logo-service">
+                <i class="fas fa-pen-nib"></i>
             </div>
             <div class="info">
-                <h3>Logotipo Profissional</h3>
-                <p>Artes exclusivas feitas no Canva.</p>
+                <h3>Logotipo Premium</h3>
+                <p>Identidade visual completa e exclusiva.</p>
                 <span class="preco">R$ 150,00</span>
-                <button onclick="window.location.href='https://wa.me/SEU_NUMERO'">Encomendar</button>
+                <button class="btn-add">Adicionar ao Carrinho</button>
             </div>
         </div>
 
         <div class="card">
-            <div class="thumb" style="background: linear-gradient(45deg, #111, #333);">
-                <i class="fas fa-code"></i>
+            <div class="thumb web-service">
+                <i class="fas fa-laptop-code"></i>
             </div>
             <div class="info">
-                <h3>Landing Page</h3>
-                <p>Site responsivo e focado em conversão.</p>
+                <h3>Site Profissional</h3>
+                <p>Landing Pages focadas em conversão.</p>
                 <span class="preco">R$ 350,00</span>
-                <button onclick="window.location.href='https://wa.me/SEU_NUMERO'">Encomendar</button>
+                <button class="btn-add">Adicionar ao Carrinho</button>
             </div>
         </div>
     </div>
 
-    <footer>
-        <p>&copy; 2026 vxart.shop - Todos os direitos reservados</p>
-    </footer>
+    <script src="script.js"></script>
 </body>
 </html>

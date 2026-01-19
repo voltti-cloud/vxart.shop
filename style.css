@@ -1,84 +1,92 @@
 :root {
-    --primary: #00ff88;
-    --bg: #0b0b0b;
-    --card-bg: #161616;
+    --primary: #2a82e4; /* Azul da logo */
+    --secondary: #00d4ff; /* Ciano claro */
+    --bg: #050a12; /* Azul quase preto */
+    --card-bg: #0d1624;
     --text: #ffffff;
-    --accent: #222;
+    --accent: #1a2a44;
 }
 
 body {
     background-color: var(--bg);
     color: var(--text);
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Inter', sans-serif;
     margin: 0;
-    text-align: center;
 }
 
 header {
-    padding: 20px;
-    border-bottom: 1px solid var(--accent);
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(5, 10, 18, 0.9);
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
-.logo { font-size: 1.5rem; font-weight: bold; }
-.logo span { color: var(--primary); }
+.logo { font-size: 1.8rem; font-weight: bold; color: #fff; }
+.logo span { color: var(--primary); text-shadow: 0 0 10px var(--primary); }
 
-nav a {
-    color: #555;
-    text-decoration: none;
-    margin: 0 10px;
-    font-size: 0.9rem;
+nav a { color: #fff; text-decoration: none; margin: 0 15px; font-weight: 500; }
+
+.cart-icon { position: relative; display: inline-block; cursor: pointer; }
+#cart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: var(--secondary);
+    color: #000;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+    font-weight: bold;
 }
 
-.hero { padding: 60px 20px; }
-.hero h1 { font-size: 2.5rem; }
-.hero h1 span { color: var(--primary); }
+.hero { padding: 100px 20px; text-align: center; }
+.hero h1 span { color: var(--secondary); }
 
 .grid-produtos {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 25px;
     flex-wrap: wrap;
-    padding: 20px;
+    padding: 40px 5%;
 }
 
 .card {
     background: var(--card-bg);
-    border: 1px solid var(--accent);
-    border-radius: 15px;
-    width: 350px;
+    border-radius: 20px;
+    width: 300px;
     padding: 20px;
-    transition: 0.3s;
+    border: 1px solid var(--accent);
+    transition: 0.4s;
 }
 
-.card:hover { border-color: var(--primary); }
+.card:hover { 
+    transform: scale(1.05); 
+    border-color: var(--secondary);
+    box-shadow: 0 10px 30px rgba(0, 212, 255, 0.1);
+}
 
 .thumb {
-    height: 100px;
+    height: 150px;
+    background: linear-gradient(135deg, #1a2a44, #050a12);
+    border-radius: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2rem;
-    margin-bottom: 15px;
-    border-radius: 10px;
+    font-size: 3rem;
+    color: var(--secondary);
 }
 
-.preco {
-    display: block;
-    margin: 15px 0;
-    font-weight: bold;
-}
-
-button {
-    background: var(--primary);
+.btn-add {
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
     border: none;
-    padding: 10px 20px;
-    border-radius: 8px;
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    color: #fff;
     font-weight: bold;
     cursor: pointer;
-}
-
-footer {
-    padding: 40px;
-    font-size: 0.8rem;
-    color: #666;
 }
