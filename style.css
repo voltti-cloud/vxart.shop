@@ -1,0 +1,49 @@
+:root {
+    --primary: #00ff88;
+    --bg: #0f0f0f;
+    --card: #1a1a1a;
+    --white: #ffffff;
+}
+
+body {
+    background: var(--bg);
+    color: var(--white);
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header { width: 100%; padding: 20px; text-align: center; }
+.logo { font-size: 24px; font-weight: bold; }
+.logo span { color: var(--primary); }
+
+.hero { text-align: center; padding: 50px 20px; }
+.hero h1 span { color: var(--primary); }
+
+.grid-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.card {
+    background: var(--card);
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #333;
+    text-align: center;
+}
+
+button {
+    background: var(--primary);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
