@@ -3,42 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>vxart.shop | Portfólio & Loja</title>
+    <title>vxart.shop | Design & Web</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
+        <div class="logo">vxart<span>.shop</span></div>
         <nav>
-            <div class="logo">vxart<span>.shop</span></div>
-            <ul class="menu">
-                <li><a href="#portfolio">Serviços</a></li>
-                <li><a href="https://wa.me/seunumeroaqui">Contato</a></li>
-            </ul>
+            <a href="#portfolio">Trabalhos</a>
+            <a href="https://wa.me/SEU_NUMERO" class="btn-contato">Contato</a>
         </nav>
     </header>
 
-    <main>
-        <section class="hero">
-            <h1>Design Gráfico & <span>Web Design</span></h1>
-            <p>Transformando sua ideia em realidade visual.</p>
-        </section>
+    <section class="hero">
+        <h1>Design que <span>vende</span>.</h1>
+        <p>Especialista em identidades visuais no Canva e Web Design moderno.</p>
+    </section>
 
-        <section id="portfolio" class="grid-produtos">
-            <div class="card">
-                <div class="thumb" style="background: #333; height: 150px; border-radius: 10px;"></div>
-                <h3>Landing Page Mobile</h3>
-                <p>A partir de R$ 250</p>
-                <button>Encomendar</button>
+    <div id="portfolio" class="grid-produtos">
+        <div class="card">
+            <div class="thumb" style="background: linear-gradient(45deg, #222, #444);">
+                <i class="fas fa-paint-brush"></i>
             </div>
-            <div class="card">
-                <div class="thumb" style="background: #333; height: 150px; border-radius: 10px;"></div>
-                <h3>Logotipo + Artes Canva</h3>
-                <p>A partir de R$ 120</p>
-                <button>Encomendar</button>
+            <div class="info">
+                <h3>Logotipo Profissional</h3>
+                <p>Artes exclusivas feitas no Canva.</p>
+                <span class="preco">R$ 150,00</span>
+                <button onclick="window.location.href='https://wa.me/SEU_NUMERO'">Encomendar</button>
             </div>
-        </section>
-    </main>
+        </div>
 
-    <script src="script.js"></script>
+        <div class="card">
+            <div class="thumb" style="background: linear-gradient(45deg, #111, #333);">
+                <i class="fas fa-code"></i>
+            </div>
+            <div class="info">
+                <h3>Landing Page</h3>
+                <p>Site responsivo e focado em conversão.</p>
+                <span class="preco">R$ 350,00</span>
+                <button onclick="window.location.href='https://wa.me/SEU_NUMERO'">Encomendar</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 vxart.shop - Todos os direitos reservados</p>
+    </footer>
 </body>
 </html>
